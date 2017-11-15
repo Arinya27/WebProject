@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Accept a Signature &middot; Signature Pad</title>
+  <style type="text/css">
+    body { font: normal 100.01%/1.375 "Helvetica Neue",Helvetica,Arial,sans-serif; }
+  </style>
+  <link rel="stylesheet" href="../signature_js/jquery.signaturepad.css">
+  <!--[if lt IE 9]><script src="../build/flashcanvas.js"></script><![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script src="../js/script.js" ></script>
+  
+</head>
+<body class="sigPad">
+<div >
+  <form method="post" action="full_receipt.html" >
+    <label for="name" style=" margin-top: 10px;margin-left: 5px; font-family: Helvetica, Arial, sans-serif;" > 
+    Welcome Bala,</label>
+     
+    <ul class="sigNav">
+     
+      <li class="drawIt"><a href="#draw-it" style="font-family: Helvetica, Arial, sans-serif;" >Sign here</a></li>
+      <li class="clearButton"><a href="#clear" style="font-family: Helvetica, Arial, sans-serif;" >Clear</a></li>
+    </ul>
+    <div class="sig sigWrapper">
+      <canvas class="pad" width="316" height="214"></canvas>
+      <input type="hidden" name="output" id="output" class="output">
+    </div>
+    <div align="center">
+    <button type="submit"  style="width: 50%; margin-left: 10px; margin-right: 10px; background-color:#666;
+     text-align: center; color: white; style="font-family: Helvetica, Arial, sans-serif;" id="submit_Signature" >Done</button>
+    </div>
+  </form>
+</div>
+  <script src="../signature_js/jquery.signaturepad.min.js"></script>
+  <script>
+    $(document).ready(function() {
+    
+    var options = {
+  bgColour : '#FFF'
+  , drawOnly : true
+};
+    
+      $('.sigPad').signaturePad(options);
+    });
+  </script>
+  <script src="../signature_js/json2.min.js"></script>
+</body>

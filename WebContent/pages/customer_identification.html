@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script	src="../js/cordova-1.5.0.js"></script>
+<script src="../js/barcodescanner.js"></script> 
+<link rel="stylesheet"	href="../jquery.mobile-1.0/jquery.css" />
+	<link rel="stylesheet" href="../css/custom.css" type="text/css" />
+	<script	src="../jquery.mobile-1.0/jquery.js"></script>
+	<script	src="../jquery.mobile-1.0/jquerymob.js"></script>
+
+<script language="javascript" type="text/javascript">
+// <![CDATA[
+
+    
+        $(document).bind("mobileinit", function () {
+            $.extend($.mobile, {
+           
+                  ajaxEnabled : false
+ 
+            });
+        });
+
+
+
+// ]]>
+    </script>
+
+
+<script type="text/javascript">
+ function startScan()
+{
+//alert("hi");
+console.log("scan");
+	window.plugins.barcodeScanner.scan(scannerSuccess, scannerFailure);
+}
+
+function displayAlert(result){
+	scan_txt.value = result;
+}
+
+function stopScan()
+{
+
+}
+
+function scannerSuccess(result) {
+    console.log("scannerSuccess: result: " + result)
+    pass.value = "success: " + JSON.stringify(result)
+}
+
+//------------------------------------------------------------------------------
+function scannerFailure(message) {
+    console.log("scannerFailure: message: " + message)
+    resultSpan.innerText = "failure: " + JSON.stringify(message)
+}
+
+
+</script>
+
+
+
+<title>MPOS</title>
+	
+</head>
+<body onload="">
+
+<div data-role="page" id="cust_idef_page" class="ui_baground" >
+	<div  data-role="header" data-theme="a" > 
+		<h1>Customer Detail</h1>
+
+		<!-- <a href="/" class="ui-btn-right" data-direction="reverse" 	data-rel="back"
+
+				style="background-repeat: repeat-y; background-image: url('../images/blue-button-right');">Guest</a> -->
+	</div>	
+	<div data-role="content" style="margin-top: 20%;">
+		<div align="center">
+			<p style="height: 34px; width: 100%; font-weight:bold; font-size : 20px;">Scan / Enter Loyalty ID</p>
+				<fieldset data-role="controlgroup" >
+					 <input type="text" name="scan_txt" onfocus="startScan();" id="scan_txt"  />
+				</fieldset>
+				<fieldset>
+					<a href="/"  data-direction="reverse" data-rel="back" data-role="button" data-theme="a" data-inline="true" onclick="startScan();" id="scan_enter_bttn" >Enter</a>
+				</fieldset>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>MPOS</title>
+	<link rel="stylesheet" href="../jquery.mobile-1.0/jquery.css" />
+	<link rel="stylesheet" href="../css/custom.css" type="text/css" />
+	<script src="../jquery.mobile-1.0/jquery.js"></script>
+	<script src="../jquery.mobile-1.0/jquerymob.js"></script>
+	<script src="../js/jstorage.js" ></script>
+	<script src="../js/script.js" ></script>
+</head>
+<body>
+	<div data-role="page" id="page_test">
+		<div data-role="header" data-theme="a">
+			<a href="#" data-role="button" data-theme="s"
+				data-inline="true" class="ui-btn-right" id="receipt_Bttn">Done</a>
+
+			<h1>Receipt</h1>
+		</div>
+
+
+		<div data-role="content" align="center">
+
+			 <table width="100%" border="0">
+				<caption style="font-size: 14px;">
+					<IMG STYLE="position:center;height:46px;width:121px" SRC="../images/ms_logo.png"> 
+
+					<p>
+						23 Queensway Crawley<br> West Sussex<br> RH10 1CE <br>01293
+						549061<br> VAT No.GB2321228892
+					</p>
+					<br>
+				</caption>
+
+				<thead>
+					<tr>
+						<th align="left" style="font-size: 15px; font-weight: bold;">ITEM
+							CODE</th>
+						<th align="left" style="font-size: 15px; font-weight: bold;">ITEM
+							NAME</th>
+						<th align="right" style="font-size: 15px; font-weight: bold;">VALUE</th>
+					</tr>
+				</thead>
+				<tbody style="font-size: 14px;">
+					<tr>
+						<td>07532566178</td>
+						<td>SPA REVIT BODY LOT</td>
+						<td align="right">12.00</td>
+					</tr>
+					<tr>
+						<td>07559367176</td>
+						<td>5 HeartLS BS</td>
+						<td align="right">5.00</td>
+					</tr>
+					<tr>
+						<td>07654896555</td>
+						<td>PIES</td>
+						<td align="right">9.00</td>
+					</tr>
+					<tr>
+						<td>08956798943</td>
+						<td>CRUNCHY STICKS</td>
+						<td align="right">11.25</td>
+					</tr>
+				</tbody>
+
+				<tbody style="font-size: 14px;">
+					<tr>
+						<td></td>
+						
+					</tr>
+
+				</tbody>
+
+				
+				<tbody style="font-size: 14px;">
+					<tr>
+						<td colspan="2" align="center">Total before saving</td>
+						
+						<td align="right">49.50</td>
+
+					</tr>
+				</tbody>
+
+	
+				<tbody style="font-size: 14px;">
+					<tr>
+						<td colspan="2" align="center">**B00HP on Beauty</td>
+						
+						<td align="right">-2.50</td>
+
+					</tr>
+				</tbody>
+
+
+
+
+				<tbody style="font-size: 14px;">
+					<tr>
+						<td colspan="2" align="center">Items:5 Balance to Pay</td>
+						
+						<td align="right">47.00</td>
+
+					</tr>
+				</tbody>
+
+				<tfoot style="font-size: 14px;">
+					<tr>
+						<td colspan="2" align="center"><h4>Your SAVINGS</h4></td>
+						
+						<td align="right">2.50</td>
+
+					</tr>
+				</tfoot>
+
+
+			</table>
+			
+
+			<!-- <table width="100%" border="0">
+				
+				<tfoot style="font-size: 14px;">
+					<tr>
+						<td>Total before saving</td>
+						<td></td>
+						<td>49.50</td>
+
+					</tr>
+				</tfoot>
+
+
+				<tfoot style="font-size: 14px;">
+					<tr>
+						<td>**B00HP on Beauty</td>
+						<td></td>
+						<td>-2.50</td>
+
+					</tr>
+				</tfoot>
+
+
+
+
+				<tfoot style="font-size: 14px;">
+					<tr>
+						<td>Items:5 Balance to Pay</td>
+						<td></td>
+						<td>47.00</td>
+
+					</tr>
+				</tfoot>
+				<tfoot style="font-size: 14px;">
+					<tr>
+						<td><h4>Your SAVINGS</h4></td>
+						<td></td>
+						<td>2.50</td>
+
+					</tr>
+				</tfoot>
+			</table> -->
+			<table width="80%" border="0">
+				<colgroup width="60%" />
+				<colgroup id="colgroup" class="colgroup" align="center"
+					valign="middle" />
+				<thead>
+					<tr>
+						<th scope="col"></th>
+						<th scope="col"></th>
+						<th scope="col"></th>
+					</tr>
+				<thead style="font-size: 14px;">
+					<tr>
+						<td>Visa Debit SALE</td>
+
+					</tr>
+				</thead>
+
+				<tfoot style="font-size: 14px;">
+					<tr>
+						<td>NUMBER:</td>
+						<td></td>
+						<td align="right">*********2067</td>
+
+					</tr>
+				</tfoot>
+				<tfoot style="font-size: 14px;">
+					<tr>
+						<td>AUTH CODE:</td>
+						<td></td>
+						<td align="right">091040</td>
+
+					</tr>
+				</tfoot>
+				<tfoot style="font-size: 14px;">
+					<tr>
+						<td>MERCHANT:</td>
+						<td></td>
+						<td align="right">46200002</td>
+
+					</tr>
+				</tfoot>
+			</table>
+			
+			<!--<table width="80%" border="0">
+				<colgroup width="60%" />
+				<colgroup id="colgroup" class="colgroup" align="center"
+					valign="middle" />
+				<thead>
+					<tr>
+						<th scope="col"></th>
+						<th scope="col"></th>
+						<th scope="col"></th>
+					</tr>
+				<thead style="font-size: 14px;">
+					<tr>
+						<td>Cardholder PIN Verified</td>
+
+					</tr>
+				</thead>
+				<tfoot style="font-size: 14px;">
+					<tr>
+						<td>CHANGE DUE:</td>
+						<td></td>
+						<td align="right">0.00</td>
+					</tr>
+				</tfoot>
+
+				<div style="font-size: 14px;">
+				*****************************************************
+				
+				LOYALITY CARD STATEMENT
+				*****************************************************
+				</div>
+			</table>
+
+			<table width="80%" border="0">
+				<colgroup width="60%" />
+				<colgroup id="colgroup" class="colgroup" align="center"
+					valign="middle" />
+				<thead>
+					<tr>
+						<th scope="col"></th>
+						<th scope="col"></th>
+						<th scope="col"></th>
+					</tr>
+				<thead style="font-size: 14px;">
+					<tr>
+						<td>CARD NUMBER:</td>
+						<td></td>
+						<td align="right">63400402404076806</td>
+					</tr>
+				</thead>
+				<tfoot style="font-size: 14px;">
+					<tr>
+						<td>POINTS EARNED:</td>
+						<td></td>
+						<td align="right">20</td>
+
+					</tr>
+				</tfoot>
+				<tfoot style="font-size: 14px;">
+					<tr>
+						<td>TOTAL POINTS:</td>
+						<td></td>
+						<td align="right">262</td>
+
+					</tr>
+				</tfoot>
+			</table> -->
+
+			<br>
+			<p style="font-size: 14px;">
+				More savings ideas at <a style="color:#6C8F53" href="url">www.m.marksandspencer.com</a> <br>
+				11-April-2012 09:01:24
+			</p>
+		</div>
+		<div class="ui-grid-a" align="center">
+				<div class="ui-block-a">
+					<a href="landing.html" data-role="button" data-inline="true"
+						data-theme="a"
+						style="height: 40px; width: 120px; margin-left: 34px;">Print</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="landing.html" data-role="button" data-inline="true"
+						data-theme="a" style="height: 40px; width: 120px;">Email</a>
+				</div>
+			</div>
+		</div>
+		
+		
+
+ <div data-role="page" id="sheet0"  style="width:100%;background-color: rgba(0, 0, 0, 0.6); background-image:none; ">
+
+	<div data-role="header" style="margin-top:40%;">
+		<p style="color:#c1c1c1;font-size:14px;text-align:center;"> Are you sure you want to void this item? </p>
+	</div>
+	
+	<div data-role="content" style="background:#FFF">
+	
+	<a href="#" data-role="button" id="show_desc_dialog" style="margin-top:13.5px;" data-theme="l" >Yes</a>
+	<a data-rel="back" data-role="button" href="#" data-theme="m" >Cancel</a>
+	
+	</div>
+</div>
+
+<div data-role="page" id="sheet1" style="width:100%;background-color: rgba(0, 0, 0, 0.6); background-image:none;" >
+		
+	<div data-role="header" style="margin-top:40%;" >
+		<p style="color:#c1c1c1; font-size:14px;text-align:center;">Line item void reason?</p>
+	</div>
+	<div  align="center" data-role="content"
+					style="background:#FFF" >
+		
+		<div  style="border:none ; background:none; ">
+		<a data-role="button" data-theme="p"  href="#" data-rel="dialog" id="void_reason1">Did	Not Want</a> 
+		</div>
+		<div  style=" border:none ; background:none; ">
+		<a
+			data-role="button" data-theme="p" href="#" data-rel="dialog" id="void_reason2" >Duplicate Scan</a>
+		</div>
+			<a data-role="button" data-theme="m" id="close_void_dialog" href="#">Cancel</a>
+	</div>
+</div>
+
+<div data-role="page" id="sheet2" style="width:100%;background-color: rgba(0, 0, 0, 0.6); background-image:none;" >
+
+	<div data-role="header" style="margin-top:40%;" >
+		<p style="color:#c1c1c1; font-size:14px;text-align:center;">Change Quantity</p>
+	</div>
+	<div align="center" data-role="content"	data-theme="g" >
+		
+		<p style="font-size: 16px; font-weight: bold;">Enter Quantity</p>
+		<div align="center">
+				<input type="number" name="name" style="width:55px; text-align:center;" value="10" maxlength="5" />
+		</div>
+		<div class="ui-grid-a">              
+			<div class="ui-block-a">                  
+				<a data-role="button" data-theme="a" id="close_qty_dialog" href="#"
+				style="width:105px; text-align: center;" >Cancel</a>
+				<!-- <a  href="#" data-rel="back" data-role="button" data-theme="a" style="width:105px; text-align: center;">Cancel</a></div>  -->             
+			</div>
+			<div class="ui-block-b">                  
+				<a href="#" data-rel="back" data-role="button" data-theme="a" style="width:105px; text-align: center;">OK</a>
+			</div>          
+		</div>
+	</div>
+</div>
+	
+
+<div data-role="page" id="bar"  style="width:100%;background-color: rgba(0, 0, 0, 0.6); background-image:none; ">
+
+	<div data-role="header" style="margin-top:40%;">
+		<p style="color:#c1c1c1;font-size:14px;text-align:center;"> Are you sure you want to void all items? </p>
+	</div>
+	
+	<div data-role="content" style="background:#FFF" >
+	
+	<a href="#" id="item_void_dialog" data-role="button" data-rel="dialog" style="margin-top:13.5px;" data-theme="l">Yes</a>
+	<a data-role="button" href="#" data-rel="back" data-theme="m" >Cancel</a>
+	
+	</div>
+		
+</div>
+
+<div data-role="page" id="bar1" style="width:100%;background-color: rgba(0, 0, 0, 0.6); background-image:none;" >
+
+	<div data-role="header" style="margin-top:40%;" >
+		<p style="color:#c1c1c1; font-size:14px;text-align:center;">Reason to void all items?</p>
+	</div>
+	<div data-role="content" style="background:#FFF;">
+		<select id="selectmenu" data-theme="m" >
+		<option value="2">Did Not Want</option>
+		<option value="2">Duplicate Scan</option>
+		<option value="2">Card Invalid</option>
+		</select>
+		<div class="ui-grid-a" align="center" >
+			<div class="ui-block-a">
+				<a href="#" data-role="button" data-theme="a" style="margin-left:20%;width:105px;text-align:center;" id="close_cart_void_dialog">Cancel</a>
+			</div>
+			<div class="ui-block-b">
+				<a href="#"  data-role="button" data-theme="a" style="margin-left:20%;width:105px;text-align:center;" 
+				id="save_cart_void_dialog">Ok</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="cardtype" style="width:100%;background-color: rgba(0, 0, 0, 0.6); background-image:none;" >
+
+	<div data-role="header" style="margin-top:30%;" >
+		<p style="color:#c1c1c1; font-size:15px;text-align:center;">Choose Your Card type</p>
+	</div>
+		<div  align="center" data-role="content"	style="background:#FFF" >
+		
+				<div  style="border:none ; background:none; ">
+					<a data-role="button" id="creditcard" data-theme="p" href="#" data-rel="dialog" >Credit Card</a> 
+				</div>
+				<div  style=" border:none ; background:none; ">
+						<a data-role="button" id="debitcard" data-theme="p" href="#" data-rel="dialog" >Debit Card</a>
+				</div>
+					<a data-role="button" data-theme="m" href="#" data-ajax="false" data-rel="back" >Cancel</a>
+		</div>
+			
+</div>	
+	
+<div data-role="page" id="credit" style="width:100%;background-color: rgba(0, 0, 0, 0.6); background-image:none;" >
+
+	<div data-role="header" style="margin-top:15%;" >
+		<p style="color:#c1c1c1; font-size:15px;text-align:center;">Card Details</p>
+	</div>
+	
+	<div  data-role="content" align="center" data-theme="i" > 
+	<select id="selectmenu" data-theme="m" >
+		<option value="2">Visa</option>
+		<option value="2">Master</option>
+		<option value="2">Maestro</option>
+		<option value="2">American Express</option>
+	</select>
+
+		<label style="font-size: 16px; font-weight: bold;">Enter Card Number</label>
+			<div class="ui-grid-d"  > 
+				<div class="ui-block-a">
+		        	<input type="password" pattern="[0-9]*" style="width:50px; text-align: center;" maxlength="4" />
+				</div>
+		    	<div class="ui-block-b">
+		            <input type="password" pattern="[0-9]*" style="width:50px; text-align: center;" maxlength="4" />
+				</div>
+		    	<div class="ui-block-c">
+		            <input type="password" pattern="[0-9]*" style="width:50px; text-align: center;" maxlength="4" />
+				</div>
+
+				<div class="ui-block-d">
+		            <input type="tel" pattern="[0-9]*" style="width:50px; text-align: center;"  maxlength="4" />
+				</div>
+			</div> 
+		<label style="font-size: 16px; font-weight: bold;">Enter Expiration</label>
+			<div class="ui-grid-b" style="margin-left: 25%;">
+				<div class="ui-block-a">
+					<input type="tel" pattern="[0-9]*" name="name" style="width:35px; text-align: center"  maxlength="2" placeholder="MM"/>
+				</div>
+				<div class="ui-block-b">
+					<input type="tel" pattern="[0-9]*" name="name"  style="width:35px; text-align: center"  maxlength="2" placeholder="YY"/>
+				</div>
+			</div>
+			<div class="ui-grid-a">              
+				<div class="ui-block-a">                  
+					<a href="#" data-role="button" id="cancelCredit" data-theme="a" style="width:105px; text-align: center;">Cancel</a>
+				</div>              
+				<div class="ui-block-b">                  
+					<a href="accept-signature.html" data-role="button" id="okCredit" data-theme="a" style="width:105px; text-align: center;" data-ajax="false" data-rel="external">OK</a>
+				</div>          
+			</div>
+		</div>  
+</div>
+		
+<div data-role="page" id="debit" style="width:100%;background-color: rgba(0, 0, 0, 0.6); background-image:none;" >
+
+	<div data-role="header" style="margin-top:15%;">
+		<p style="color:#c1c1c1; font-size:14px;text-align:center;">Choose Your Card type</p>
+	</div>			
+     <div   data-role="content" align="center" data-theme="i" > 
+		<select id="selectmenu" data-theme="m" >
+			<option value="2">Visa</option>
+			<option value="2">Master</option>
+			<option value="2">Maestro</option>
+			<option value="2">American Express</option>
+		</select>
+		<label style="font-size: 18px; font-weight: bold;">Enter Card Number</label>
+			<div class="ui-grid-d"  > 
+				<div class="ui-block-a">
+	        		<input type="password" pattern="[0-9]*" style="width:50px; text-align: center;" maxlength="4" />
+				</div>
+				<div class="ui-block-b">
+					<input type="password" pattern="[0-9]*" style="width:50px; text-align: center;" maxlength="4" />
+				</div>
+			    <div class="ui-block-c">
+			     	<input type="password" pattern="[0-9]*" style="width:50px; text-align: center;" maxlength="4" />
+				</div>
+
+				<div class="ui-block-d">
+			        <input type="tel" pattern="[0-9]*" style="width:50px; text-align: center;"  maxlength="4" />
+
+				</div>
+			</div> 
+			<label style="font-size: 16px; font-weight: bold;">Card Expiration</label>
+			<div class="ui-grid-b" style="margin-left: 25%;">
+				<div class="ui-block-a">
+					<input type="tel" pattern="[0-9]*" name="name" style="width:35px"  maxlength="2" placeholder="MM"/>
+				</div>
+				<div class="ui-block-b">
+					<input type="tel" pattern="[0-9]*" name="name"  style="width:35px"  maxlength="2" placeholder="YY"/>
+				</div>
+			</div>
+			<div class="ui-grid-a">              
+				<div class="ui-block-a">                  
+					<a href="#" data-role="button" id="cancelDebit" data-theme="a" style="width:105px; text-align: center;">Cancel</a>
+				</div>              
+				<div class="ui-block-b">                  
+					<a href="accept-signature.html" data-role="button" id="okDebit" data-theme="a" style="width:105px; text-align: center;" data-ajax="false" data-rel="external">OK</a>
+
+				</div>          
+			</div>
+		</div>	
+</div>
+	</body>
+</html>

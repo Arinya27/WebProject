@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>MPOS</title>
+	<link rel="stylesheet" href="../jquery.mobile-1.0/jquery.css" />
+	<link rel="stylesheet" href="../css/custom.css" type="text/css" />
+	<script src="../jquery.mobile-1.0/jquery.js"></script>
+	<script src="../jquery.mobile-1.0/jquerymob.js"></script>
+	<script src="../js/jstorage.js" ></script>
+	<script src="../js/script.js" ></script>
+</head>
+<body>
+		<div data-role="dialog" id="sheet2" style="width:100%;background-color: rgba(0, 0, 0, 0.6); background-image:none;" >
+
+			<div data-role="header" style="margin-top:40%;" >
+				<p style="color:#c1c1c1; font-size:14px;text-align:center;">Change Quantity</p>
+			</div>
+				<div id="sheet2" align="center" data-role="content"
+						data-theme="g" >
+					
+				<p style="font-size: 16px; font-weight: bold;">Enter Quantity</p>
+				<div align="center">
+						<input type="number" name="name" style="width:55px; text-align:center;" value="10" maxlength="5" />
+				</div>
+				<div class="ui-grid-a">              
+					<div class="ui-block-a">                  
+						<a  href="#" data-rel="back" data-role="button" data-theme="a" style="width:105px; text-align: center;">Cancel</a></div>              
+					<div class="ui-block-b">                  
+						<a id="confirm_qty_dialog" data-role="button" data-theme="a" style="width:105px; text-align: center;">OK</a>
+					</div>          
+				</div>
+		</div>
+	</div>
+</body>
+</html>

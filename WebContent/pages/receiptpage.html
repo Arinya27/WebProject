@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>MPOS</title>
+	<link rel="stylesheet" href="../jquery.mobile-1.0/jquery.css" />
+	<link rel="stylesheet" href="../css/custom.css" type="text/css" />
+	<script src="../jquery.mobile-1.0/jquery.js"></script>
+	<script src="../jquery.mobile-1.0/jquerymob.js"></script>
+	<script src="../js/jstorage.js" ></script>
+	<script src="../js/script.js" ></script>
+</head>
+<body>
+
+	<div data-role="page" id="receipt_page" class="ui_baground">
+		<div data-role="header" data-backbtn="true" data-theme="a">
+			<a href="#" data-rel="back" data-theme="s">Back</a>
+			<h3>Checkout</h3>
+		</div>
+		<div data-role="content" >
+			<div style="text-align:center; margin-top: 1%;">
+				<p style="text-decoration: none; font-weight: bold;">STR234-TILL10</p>
+			</div>
+			<ul data-role="listview" data-divider-theme="b"
+				style="background-color: #ffffff;" data-inset="true">
+				<li data-theme="c" data-icon="false" style="height: 25px;" ><h1
+					
+					style="margin-left: 6%; font-size: 17px; text-align: left; margin-top: 4px;">Gross Value</h1>
+					<h1 class="ui-li-aside"
+							style="font-size: 17px; text-align: right; width: 40%; margin-left: 18px; margin-top: 4.0px;">
+							&pound;1258.97 </h1>
+				</li>
+				
+                <li data-theme="c" data-icon="false" style="height: 25px;"><h1
+					style="margin-left: 6%; font-size: 17px; text-align: left; margin-top: 4px;">Discount</h1>
+					<h1 class="ui-li-aside"
+							style="font-size: 17px; text-align: right; width: 40%; margin-left: 18px; margin-top: 4.0px;">
+							&pound;1250.87 </h1>
+				</li>
+				<li data-theme="c" data-icon="false" style="height: 25px;"><h1
+					
+					style="margin-left: 6%; font-size: 17px; text-align: left; margin-top: 4px;">VAT</h1>
+					<h1 class="ui-li-aside"
+							style="font-size: 17px; text-align: right; width: 40%; margin-left: 18px; margin-top: 4.0px;" >
+							&pound;1250.50 </h1>
+
+				</li>
+				<li data-theme="c" data-icon="false" style="height: 25px;"><h1
+					
+					style="margin-left: 6%; font-size: 23px; color:green; text-align: left; margin-top: 0.5px;">Net Value</h1>
+					<h1 class="ui-li-aside"
+							style="font-size: 23px; text-align: right; color:green; width: 40%; margin-left: 18px; margin-top: 1.0px;">
+							&pound;1259.47 </h1>
+				</li>
+			</ul>
+			<div align="center"  >
+					<a href="#" id="payment_bttn" data-role="button" data-theme="a" data-transition="pop" data-inline="true" style="margin-top :55px;">Payment</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

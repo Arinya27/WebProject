@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Receipt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport"
+	content="width=device-width, minimum-scale=1, maximum-scale=1">
+	<meta name="format-detection"
+	content="telephone=no">
+	<script	src="../js/cordova-1.5.0.js"></script>
+	<script src="../js/barcodescanner.js"></script> 
+	<link rel="stylesheet" href="../jquery.mobile-1.0/jquery.css" />
+	<link rel="stylesheet" href="../css/custom.css" type="text/css" />
+	<link rel="stylesheet" href="../jquery.mobile-1.0/actionsheet.css"
+		type="text/css" />
+	<script src="../jquery.mobile-1.0/jquery.js"></script>
+	<script src="../jquery.mobile-1.0/jquerymob.js"></script>
+	<script src="../jquery.mobile-1.0/jquery.mobile.actionsheet.js"></script>
+	<style type='text/css'>
+		#login {
+			background: transparent;
+		}
+		
+		#login input {
+			display: inline;
+			width: 86%;
+			padding: 5px;
+			margin: 7px;
+		}
+		.ui-dialog  .ui-header .ui-btn-icon-notext  { display:none;} 
+		.transparent {background-color: rgba(0, 0, 0, 0.6); }
+	</style>
+</head>
+<body >
+<div data-role="page" id="payment_page" class="ui_baground"  style="display:block !important;z-index:0;" >
+		<div data-theme="a" data-role="header">
+			<h3>Payment</h3>
+		</div>
+	<div data-role="content" >
+		<div style="padding-top: 80px;" align="center">
+			<p style="height: 34px; width: 100%; font-weight:bold; font-size : 20px; text-align:center;">Please swipe your card</p>
+			<input type="password"  id="swipe_txt" style="width: 80%;" >
+				 
+
+			<div  style=" border: none;background: transparent; margin-top:10px;">
+				<a href="#" data-rel="dialog" id="manualArray"  data-role="button"  data-inline="true"  data-theme="a" style="height:40px;width:60%;  ">Manual Entry</a>
+			</div>
+	      	<div >
+	        	<a href="#" data-rel="back" data-role="button" data-inline="true"  data-theme="a" style="height:40px;width:60%;  text-align:center">Cancel</a>
+	     		</div>
+	    </div>
+	</div>				
+</div>
+</body>
+</html>
+

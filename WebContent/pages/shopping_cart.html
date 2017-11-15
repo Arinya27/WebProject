@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport"
+	content="width=device-width, minimum-scale=1, maximum-scale=1">
+<title>MPOS</title>
+		<link rel="stylesheet" href="../jquery.mobile-1.0/jquery.css" />
+	<link rel="stylesheet" href="../css/custom.css" type="text/css" />
+	<script src="../jquery.mobile-1.0/jquery.js"></script>
+		<script src="../js/script.js"></script>
+	<script src="../jquery.mobile-1.0/jquerymob.js"></script>
+</head>
+<body >
+<div data-role="page" id="shoppingcart_page" class="ui_baground" style="display:block !important;z-index:0;">
+			
+	<div data-role="header" data-theme="a" id="headslider">
+			<a href="#" class="ui-btn-left" data-rel="dialog" data-theme="h" style="height: 28px; width: 40px;" id="cart_void_dialog">
+				<span><img	src="../images/icon-delete.png" hspace="25"	style="width: 15px; height: 18px; text-align: center; margin-left:5px;" /> </span>
+			 </a> 
+			<h1>Shopping Basket</h1>
+			<a href="#" id="checkout_page" data-role="button" data-ajax="false" data-inline="true" data-icon="false" style="background:  url(../images/Check-out.png) 50% 50% no-repeat;background-size: 45px 45px;"
+					data-iconpos="notext" style="">Check</a>
+			
+
+		</div>
+		<div id="slidediv" style="display:none;">
+			<a href="customer_identification.html" style="height: 30px; text-decoration: none;" > 
+				<ul data-role="listview" data-inset="true" data-theme="d"	style="margin-left:4%;margin-right:4%;margin-top:3%;">
+					<li style="height: 15px;background:  url(../images/Title_bg.png);background-repeat: repeat-y;
+						background-size: 100% 100%;">
+						<h1	style="font-size: 14px; margin-top: -0px;">Guest</h1>
+						<h1 class="ui-li-aside" style="font-size: 14px; margin-top: 0px;"">
+						<strong >1234</strong></h1>
+					</li>
+				</ul>
+			</a>
+		
+		<fieldset class="ui-grid-a" style="margin-top: 2%; height: 45px;">
+			<div class="ui-block-a" style="width: 94%;height: 15px;">
+				<input type="text" disabled="disabled" style="width: 80% !important; margin-left: 4%; height:20px;margin-top:3px;"
+					placeholder="Item Search"></input>
+			</div>
+			<div class="ui-block-b" style="width: 3%; margin-left: -9%;">
+				<a href="#" data-role="button" data-inline="true" data-icon="false" style="background:  url(../images/cart_icon.png) 50% 50% no-repeat;background-size: 24px 24px;"
+					data-iconpos="notext" style="">Check</a>
+			</div>
+		</fieldset>
+	</div>
+	
+	<div id="swipediv">
+	
+		<IMG style="position:absolute; LEFT:-1px;height:21px;width:105%;" src="../images/slicing.png">
+	</div>
+
+		<ul data-role="listview" data-divider-theme="d" data-inset="false" id="upSlide" style="margin-top:6.5%;">
+				<li data-theme="n" data-icon="false" style="height: 35px;">
+					<a href="#" data-ajax="false" style="text-decoration: none; color: #000000;margin-top:-10px;">
+						<h1 class="ui-li-aside" style="margin-top:-25px;margin-right:88%;">Item </h1>
+						<h1 class="ui-li-aside" style="margin-top:5px; ">Qty</h1>
+						<h1 class="ui-li-aside" style="margin-top: 5px; text-align:center;">Value </h1>
+					 </a>
+				</li>
+		</ul>
+
+	<div id="contentWrapper" data-role="content"
+			style="margin-top: 0%; position: relative; height: 260px;">
+			<ul id="tasks" data-role="listview" data-divider-theme="d" data-inset="false">
+				<li  style="height: 35px;">
+					<a href="#" style="text-decoration: none; color: #000000;margin-top:-10px;">
+					<h1 style="color: black;">	Farah 1920 Burlington Check Shirt, Burgundy
+						<p class="ui-li-aside" style="color: black;"><strong>1</strong>	</p>
+						<h1 class="ui-li-aside" style="margin-top: 7px;text-align:center;"><strong>98 </strong>
+					</h1>
+					</a>
+				</li>
+
+				<li style="height: 35px;">
+					<a href="#" style="text-decoration: none; color: #000000;margin-top:-10px;">
+					<h1 style="color: black;">
+						Calvin Klein Swim Tubular Stripe Swimshorts, Black/Blue
+						<p class="ui-li-aside" style="color: black;"><strong>1</strong>	</p>
+						<h1 class="ui-li-aside" style="margin-top: 7px;text-align:center;"><strong>68 </strong>
+						</h1>
+					</a>
+				</li>
+
+				<li  style="height: 35px;">
+					<a href="#"  style="text-decoration: none; color: #000000;margin-top:-10px;">
+					<h1 style="color: black;">John Lewis Men's Square Sunglasses, Brown
+						<p class="ui-li-aside" style="color: black;"><strong>1</strong>	</p>
+						<h1 class="ui-li-aside" style="margin-top: 7px;text-align:center;"><strong>118 </strong>
+						</h1>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+		<div>
+			<ul data-role="listview" data-inset="true" data-theme="d" style="margin: 4%;">
+			<li style="height: 20px;">
+				<h1 style="font-size: 20px; margin-top: -2px;">Net Value</h1>
+				<h1 class="ui-li-aside" style="font-size: 20px; margin-top: -3px;""><strong>&pound;265.00 </strong>
+				</h1></li>
+			</ul>
+		</div>
+	
+	
+	<script src="../js/iscroll.js"></script>
+	<script src="../js/swipe.js"></script>
+	<script	src="../js/cordova-1.5.0.js"></script>
+	<script src="../js/barcodescanner.js"></script> 
+</div>	
+
+</body>
+</html>
+
+
+
